@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Clase 2 · Psicología del color</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff3ec;--card:#fff;--ink:#2b1a33;--mut:#75626f;--co:#ef6a5a;--pe:#ffd9c7;--go:#f4b942;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1c1220;--card:#2b1c31;--ink:#fdeee6;--mut:#c3adbb;--pe:#4b2c3a}}
+:root[data-theme=dark]{--bg:#1c1220;--card:#2b1c31;--ink:#fdeee6;--mut:#c3adbb;--pe:#4b2c3a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 Poppins,system-ui,sans-serif}
+main{max-width:760px;margin:auto;padding:24px 16px 48px}
+h1{font-size:clamp(28px,7vw,44px);line-height:1.1;margin:8px 0 6px}h2{font-size:22px;margin:40px 0 4px}
+p{color:var(--mut);margin:4px 0 14px}.tag{display:inline-block;background:var(--co);color:#fff;border-radius:20px;padding:3px 14px;font-size:13px;font-weight:600}
+.stage{background:var(--card);border-radius:24px;padding:14px;box-shadow:0 6px 20px #2b1a3314;text-align:center}
+.stage svg{width:100%;display:block}
+#wheel{max-width:280px;margin:auto}.spin{animation:sp 40s linear infinite;transform-origin:0 0}
+@keyframes sp{to{transform:rotate(360deg)}}
+.leg{display:flex;justify-content:space-around;font-weight:600;font-size:14px;margin-top:8px}
+.sw{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.sw button{width:46px;height:46px;border-radius:50%;border:3px solid var(--card);cursor:pointer;box-shadow:0 3px 10px #0003;transition:transform .2s}
+.sw button.on{transform:scale(1.25);border-color:var(--ink)}.sw button:focus-visible{outline:3px solid var(--go)}
+#blob{transform-origin:100px 80px;animation:br 3.5s ease-in-out infinite}
+@keyframes br{50%{transform:scale(1.12)}}
+#nm{font-size:22px;font-weight:700;margin:0;color:var(--ink)}#ds{margin:0}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.bx{border-radius:16px;padding:22px;display:grid;place-items:center}
+.bx i{width:60%;aspect-ratio:1;background:#ef6a5a;display:block;border-radius:8px;animation:pl 3s ease-in-out infinite}
+@keyframes pl{50%{transform:scale(1.15) rotate(8deg)}}
+input[type=range]{width:100%;accent-color:var(--co);margin-top:10px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.hilo{display:flex;position:relative;margin:0 0 20px;font-size:12px;font-weight:600}.hilo:before{content:"";position:absolute;left:12%;right:12%;top:9px;height:3px;background:var(--pe)}
+.hilo a{position:relative;flex:1;text-align:center;color:var(--mut);text-decoration:none}.hilo a:before{content:"";display:block;width:20px;height:20px;border-radius:50%;background:var(--pe);margin:0 auto 4px;border:3px solid var(--bg);position:relative}
+.hilo a.cur{color:var(--co)}.hilo a.cur:before{background:var(--co);animation:hp 1.6s infinite}@keyframes hp{50%{box-shadow:0 0 0 8px #ef6a5a33}}
+.lead{background:var(--card);border-left:5px solid var(--co);border-radius:14px;padding:12px 16px;font-weight:600;margin:14px 0}
+.nx{display:block;margin-top:36px;background:var(--ink);color:var(--bg);border-radius:24px;padding:16px;text-align:center;font-weight:600;text-decoration:none}
+.bt{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0}.bt button{width:auto;height:auto;border-radius:20px;border:2px solid var(--co);background:none;color:var(--ink);font:600 14px Poppins,sans-serif;padding:8px 16px;box-shadow:none;cursor:pointer}.bt button.on{background:var(--co);color:#fff}
+.pal circle{transition:fill .7s;animation:pp 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.pal circle:nth-child(2n){animation-delay:.5s}@keyframes pp{50%{transform:scale(1.15)}}
+.rg{display:grid;gap:4px;text-align:left;font-size:14px;font-weight:600;margin-top:10px}.rg input{width:100%;accent-color:var(--co)}
+.qs{list-style:none;padding:0;margin:0;display:grid;gap:10px;text-align:left}.qs li{background:var(--card);border-radius:18px;padding:14px 16px;font-weight:600;box-shadow:0 6px 20px #2b1a3314}
+#mc{width:80px;height:44px;border:none;background:none;cursor:pointer}
+</style></head><body><main>
+<nav class="hilo"><a>Origen</a><a>Trazo</a><a class="cur">Color</a><a>Mirada</a></nav>
+<div class="lead">Hilo del módulo: la mano traza → el color siente → la mirada comprende. El trazo te dio el gesto; ahora el color le da emoción.</div>
+<span class="tag">Módulo 01 · Clase 2</span>
+<h1>Psicología del color, percepción y expresión</h1>
+<p>El color se siente en el cuerpo antes de entenderse con la cabeza.</p>
+
+<h2>La rueda: cálidos y fríos</h2>
+<div class="stage"><svg id="wheel" viewBox="-110 -110 220 220"><g class="spin" id="w"></g><circle r="34" fill="var(--card)"/><text y="5" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">Croma</text></svg>
+<div class="leg"><span style="color:#ef6a5a">Cálidos: acercan, activan</span><span style="color:#3b82c4">Fríos: calman, alejan</span></div></div>
+
+<h2>¿Qué despierta cada color?</h2>
+<p>Toca un color y deja que respire.</p>
+<div class="stage"><svg viewBox="0 0 200 160" style="max-width:260px;margin:auto"><path id="blob" fill="#ef6a5a" d="M100 15C150 10 185 50 178 95C170 140 125 152 90 148C45 142 15 110 25 70C32 38 65 18 100 15Z" style="transition:fill .6s"/></svg>
+<p id="nm"></p><p id="ds"></p><div class="sw" id="sw"></div></div>
+
+<h2>Percepción: el contexto lo cambia todo</h2>
+<div class="stage"><div class="three"><div class="bx" style="background:#f4c542"><i></i></div><div class="bx" style="background:#2f5d9e"><i style="animation-delay:.4s"></i></div><div class="bx" style="background:#8a8a8a"><i style="animation-delay:.8s"></i></div></div>
+<p style="margin-top:10px">El mismo cuadrado coral, tres sensaciones: sobre amarillo vibra, sobre azul arde, sobre gris descansa.</p></div>
+
+<h2>Expresión: mueve la temperatura</h2>
+<div class="stage"><svg viewBox="0 0 300 150" style="border-radius:14px"><rect id="sk" width="300" height="150"/><circle id="sn" cx="210" cy="60" r="28"/><path id="hl" d="M0 150V105Q80 60 160 100T300 90V150Z"/></svg>
+<input type="range" id="rg" min="0" max="100" value="10" aria-label="Temperatura del color"><p id="tt" style="font-weight:600;margin:6px 0 0"></p></div>
+<h2>Armonías: cómo conversan los colores</h2><p>Elige una combinación y mira qué clima crea.</p>
+<div class="stage"><svg class="pal" id="pl" viewBox="0 0 300 60"></svg><div class="bt" id="hb"></div><p id="hm" style="font-weight:600;color:var(--ink);margin:0;min-height:48px"></p></div>
+
+<h2>Luz e intensidad</h2><p>El mismo color cambia de emoción según qué tan claro y vivo sea.</p>
+<div class="stage"><svg viewBox="0 0 200 100" style="max-width:220px;margin:auto"><circle id="vc" cx="100" cy="50" r="42"/></svg>
+<div class="rg"><label>Luz<input type="range" id="vl" min="12" max="90" value="55"></label><label>Intensidad<input type="range" id="vs" min="8" max="100" value="80"></label></div><p id="vt" style="font-weight:600;color:var(--ink);margin:10px 0 0;min-height:48px"></p></div>
+
+<h2>Ejercicio: tu color de hoy</h2>
+<div class="stage"><svg viewBox="0 0 200 100" style="max-width:220px;margin:auto"><circle id="mb" class="pal" cx="100" cy="50" r="40" fill="#ef6a5a" style="animation:pp 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center"/></svg>
+<input type="color" id="mc" value="#ef6a5a" aria-label="Elige tu color de hoy"><ul class="qs" style="margin-top:12px"><li>👁 ¿Qué color elegiste sin pensarlo mucho?</li><li>💗 ¿Dónde sientes ese color en el cuerpo?</li><li>🖌 Píntalo en una hoja con la forma que él te pida.</li></ul></div>
+<script>
+const H=[['Complementarios',['hsl(5,80%,58%)','hsl(185,60%,45%)','hsl(5,80%,58%)','hsl(185,60%,45%)','hsl(5,80%,58%)'],'Opuestos en la rueda: tensión viva, energía y contraste.'],['Análogos',['hsl(340,75%,58%)','hsl(355,78%,58%)','hsl(10,80%,58%)','hsl(25,85%,58%)','hsl(40,90%,58%)'],'Vecinos en la rueda: armonía suave y fluidez.'],['Monocromático',[25,40,55,70,85].map(l=>`hsl(280,50%,${l}%)`),'Un solo color en varias luces: unidad e introspección.']];
+const pl=document.getElementById('pl'),hb=document.getElementById('hb'),hm=document.getElementById('hm');
+pl.innerHTML=[0,1,2,3,4].map(i=>`<circle cx="${30+i*60}" cy="30" r="24"/>`).join('');
+H.forEach(h=>{const b=document.createElement('button');b.textContent=h[0];b.onclick=()=>{[...pl.children].forEach((c,i)=>c.style.fill=h[1][i]);hm.textContent=h[2];[...hb.children].forEach(x=>x.classList.remove('on'));b.classList.add('on')};hb.append(b)});
+hb.children[0].click();
+const vl=document.getElementById('vl'),vs=document.getElementById('vs');
+function vv(){const l=+vl.value,s=+vs.value;vc.style.fill=`hsl(8,${s}%,${l}%)`;vt.textContent=l<35&&s<50?'Oscuro y apagado: peso, duelo, recogimiento':l<35?'Oscuro e intenso: dramatismo y fuerza':l>=60&&s>=60?'Claro y vivo: ligereza y alegría':s<50?'Suave y apagado: nostalgia, calma':'Equilibrado: presencia sin exceso'}
+vl.oninput=vv;vs.oninput=vv;vv();
+mc.oninput=()=>mb.style.fill=mc.value;
+</script>
+</main>
+<script>
+const w=document.getElementById('w');let s='';
+for(let i=0;i<12;i++){const a=(i*30-90)*Math.PI/180,b=((i+1)*30-90)*Math.PI/180,r=100;s+=`<path fill="hsl(${i*30},80%,58%)" d="M0 0L${r*Math.cos(a)} ${r*Math.sin(a)}A${r} ${r} 0 0 1 ${r*Math.cos(b)} ${r*Math.sin(b)}Z"/>`}
+w.innerHTML=s;
+const E=[['#d62839','Rojo','Energía, pasión, rabia. Activa el cuerpo.'],['#f28c28','Naranja','Alegría, calidez, ganas de crear.'],['#f4c542','Amarillo','Luz, optimismo, claridad mental.'],['#3aa76d','Verde','Calma, equilibrio, renacer.'],['#3b82c4','Azul','Confianza, serenidad, profundidad.'],['#7b5ea7','Violeta','Intuición, misterio, transformación.'],['#f48fb1','Rosa','Ternura, cuidado, vulnerabilidad.']];
+const sw=document.getElementById('sw');
+E.forEach((e,i)=>{const b=document.createElement('button');b.style.background=e[0];b.setAttribute('aria-label',e[1]);b.onclick=()=>{blob.style.fill=e[0];nm.textContent=e[1];nm.style.color=e[0];ds.textContent=e[2];[...sw.children].forEach(x=>x.classList.remove('on'));b.classList.add('on')};sw.append(b)});
+sw.children[0].click();
+function sc(){const v=+rg.value,h=20+v*2.1;sk.style.fill=`hsl(${h},85%,86%)`;sn.style.fill=`hsl(${h},90%,58%)`;hl.style.fill=`hsl(${h},45%,42%)`;tt.textContent=v<35?'Cálido: cercanía, energía, hogar':v>65?'Frío: distancia, calma, quietud':'Intermedio: equilibrio'}
+rg.oninput=sc;sc();
+</script></body></html>
